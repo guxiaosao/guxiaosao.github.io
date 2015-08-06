@@ -21,11 +21,23 @@
 				}
 		)
 	</script>
+	<script>
+		$(document).ready(function(){
+			$(".thumb ul li a img").click(function(){
+
+				$(".suoxiao").removeClass(suoxiao);
+				$(this).addClass(suoxiao);
+
+			})
+
+
+		})
+	</script>
 
 </head>
 </head>
 <body>
-<div class="register"><a href="login.html">注册</a></div>  <div class="login"><a href="login_2">登录</a></div>
+<div class="register"><a href="login.html">注册</a></div>  <div class="login"><a href="login_2.html">登录</a></div>
     <div class="nav_top">
 		<div style="position: relative;">
         <div class="nav_top_l"><a href="login_2.html">三沐林</a></div>
@@ -347,14 +359,7 @@
 	tab.onmouseover=function() {clearInterval(MyMar)};
 	tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
 
-	$(document).ready(function(){
-		$(".thumb ul li").click(function(){
-			$(".thumb ul li").css('display','none')
 
-		})
-
-
-	})
 
 
 
