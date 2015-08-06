@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>三沐林</title>
+    <link rel="stylesheet" href="css/style.css"/><script src="js/top.js"></script>
+
+
+    <link rel="stylesheet" href="css/Order_Details.css"/>
+    <link rel="stylesheet" href="css/MyOrder.css"/>
+    <link rel="stylesheet" href="css/Address_Management.css"/>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script  src="js/adress_management.js"></script>
+
+    <script>
+        $(function () {
+
+            $(".huadong").mouseover(function () {
+                $(this).show().css('padding-left', '10px')
+
+            });
+            $(".huadong").mouseout(function () {
+                $(this).show().css('padding-left', '-10px');
+            });
+            $("#searchSelected").click(function () {
+                $("#searchTab").toggle();
+                $(this).addClass("searchOpen");
+            });
+
+            $("#searchTab li").hover(function () {
+                $(this).addClass("selected");
+            }, function () {
+                $(this).removeClass("selected");
+            });
+
+            $("#searchTab li").click(function () {
+                $("#searchSelected").html($(this).html());
+                $("#searchTab").hide();
+                $("#searchSelected").removeClass("searchOpen");
+            });
+            $('.orange').click(function(event) {
+                $('.popup').show();
+            });
+            $('.close').click(function(event) {
+                $('.popup').hide();
+            });
+//                $(".ri a").click(function () {
+//            $(this).css("border","1px  #10a8c2 solid").siblings().css("border","1px  #ddd solid");
+//        })
+                $(".weixin").mouseover(function(){
+                    $(".wei_xin").fadeIn(1000)
+
+                });
+            $(".weixin").mouseleave(function(){
+                $(".wei_xin").fadeOut(1000)
+
+            })
+            $(".moren").click(function(){
+                $(".moren").removeClass("z")
+                $(this).addClass("z")
+
+            })
+
+
+        })
+    </script>
+
+</head>
+<body>
+<div class="black"></div>
+  <div class="xiugai_dizhi">
+  <div style="width:100%;height:40px;line-height:40px;position: relative;top:20px;background: #CCCCCC ;"><img src="image/zpzz.png" style="position:absolute;top:4px;left:13px;"><span style="margin-left:45px;">收货地址修改</span><span id="closediv" style="right:23px;color: #669999;position:absolute"><a href="#common-add">修改</a></span></div>
+  <div class="xiugai_biao">  
+  <p></p>
+  <input type="hidden" name="xiugai-id"/>
+  <p><span>收货人:</span><input type="text" name="shouhuoren"/></p>
+  <p><span>所在地区:</span><input type="text" name="diqu"/></p>
+  <p><span>详细地址:</span><input type="text" name="xiangxidizhi" size="50"/></p>
+  <p><span>邮编:</span><input type="text" name="youbian"/></p>
+  <p><span>电话/手机:</span><input type="text" name="shoujihaoma"/></p>
+  <p></p>
+  </div>
+  </div>
+
+<div class="top">
+    <div class="header">
+        <ul class="header_nav_bdl">
+            <li><a href="#">三沐林首页</a></li>
+            <li><a href="#">hi,欢迎来到三沐林</a></li>
+        </ul>
+
+        <ul class="header_nav_bdr">
+            <li>
+                <div>
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li><a href="#">我的订单</a>
+            </li>
+            <li class="spacer"></li>
+            <li><a href="#">购物车</a></li>
+            <li class="spacer"></li>
+            <li>
+                <div class="box">
+                    <ul>
+                        <li class="weixin">
+                            <a href="#">手机三沐林</a>
+                            <div class="weixin-logo"></div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li><a href="#">帮助中心</a></li>
+
+        </ul>
+    </div><!---header结束-->
+</div><!---top结束-->
+<div class="search">
+    <div class="login">
+        <img src="image/logo.png" alt=""/>
+    </div>
+
+    <div class="search_t">
+        <div class="search_b">
+            <div >
+                <img src="image/benzhi.png" class="orange pointer" alt=""/>
+                <img src="image/benzhi.png"  class="orange pointer"alt=""/>
+                <img src="image/benzhi.png" class="orange pointer" alt=""/>
+                <img src="image/benzhi.png"  class="orange pointer"alt=""/>
+            </div>
+            <div>
+                <input name="w" type="text" value="请输入VPN码 配件名称或配件编码"style="color: #808080;width: 300px;height: 30px;" onFocus="this.value=''"/>
+               <a href="detail.html">  <input type="button" style="background-image:url('image/sou.png');width:57px;position: absolute;right: -57px;top: 30px;
+                            height:34px;border:0;vertical-align:middle;border: 1px solid #10a8c2;cursor: pointer;"></a>
+            </div>
+        </div>
+        <div class="popup">
+            <span class="close pointer"></span>
+            <form action="">
+                <div class="select-group">
+                    <label for="">品类</label>
+                    <select class="orange-select" name="" id="">
+                        <option value="">商用车</option>
+                    </select>
+                </div>
+                <div class="select-group">
+                    <label for="">品牌</label>
+                    <select class="orange-select" name="" id="">
+                        <option value="">奥迪</option>
+                    </select>
+                    　　
+                    <select class="orange-select" name="" id="">
+                        <option value="">奥迪</option>
+                    </select>
+                    　　
+                    <select class="orange-select" name="" id="">
+                        <option value="">奥迪</option>
+                    </select>
+                </div>
+                <div class="select-group">
+                    <label for="">配置</label>
+                    <select class="orange-select select-long" name="" id="">
+                        <option value="">无级变速</option>
+                    </select>
+                    　　
+                    <label><input type="radio">记住我的车</label>
+                </div>
+                <div class="select-group">
+                    <label for="">配件</label>
+                    <select class="orange-select select-long" name="" id="">
+                        <option value="">空调高低压管</option>
+                    </select>
+                    　　
+                    <input class="submit pointer" type="submit" value="去查找">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="lianxi">
+
+        <img src="image/iphone.png" alt=""/>
+        <p style="float:left">4000-000-1234</p>
+
+    </div>
+</div><!---search结束-->
+<div class="nav_2015">
+    <div class="nav">
+        <div class="nav_left">
+            <div class="dt">
+                <a href="#">全部配件分类</a>
+            </div>
+
+        </div><!--nav_left结束-->
+        <div class="nav_mid">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="chexing.html">车型</a></li>
+                <li><a href="#">每日特价</a></li>
+                <li><a href="#">知识库</a></li>
+            </ul>
+        </div>
+        <div class="nav_right">
+
+            <div class="box">
+                <ul>
+                    <li class="weixin">
+                        <a href="#"><img src="image/erweima.png" alt=""/></a>
+                        <div class="weixin-logo"></div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="p">
+    <div class="order">
+        <div class="order_left">
+            <div class="order_left_title"><p>我的三沐林</p></div>
+            <div class="order_left_btn">
+                <ul>
+                    <li><a href="MyOrder.html"  style="font-size: 16px;">我的订单</a>
+                        <i style="font-style: normal;float: right"> > </i>
+
+                    <li><a href="#">待付款</a></li>
+                    <li><a href="#">待收货</a></li>
+                    <li><a href="#">待评价</a></li>
+                    <li><a href="#">退货退款</a></li>
+
+
+                </ul>
+            </div>
+            <ul class="ord_b">
+
+                <li><a href="My_wallet.html">我的钱包</a>
+                    <i> > </i>
+                </li>
+                <li><a href="ShoppingCart.html">我的购物车</a>
+                    <i> > </i>
+                </li>
+                <li><a href="Basic_information.html">基本信息</a>
+                    <i> > </i>
+                </li>
+                <li><a href="Address_Management.html">地址管理</a>
+                    <i> > </i>
+                </li>
+                <li><a href="#">会员体系</a>
+                    <i> > </i>
+                </li>
+                <li><a href="Security_Settings2.html">安全设置</a>
+                    <i> > </i>
+                </li>
+
+            </ul>
+        </div><!---order_left-->
+        <div class="order_right">
+            <div class="address">
+                <span></span>
+                <img src="image/address.png" />
+                <p>添加新的收货地址</p>
+            </div>
+            <div class="basic_top_btn">
+                <table>
+                    <tr>
+                        <td>所在地区<i>*</i></td>
+                        <td style="height: 30px;">
+                            <select style="height: 30px;
+  width: 100px;">
+                                <option value="">中国大陆</option>
+                                <option value="">中国大陆</option>
+                                <option value="">中国大陆</option>
+                                <option value="">中国大陆</option>
+                            </select>
+                        </td>
+                        <td style="height: 30px;">
+                            <select style="height: 30px;
+  width: 100px;">
+                                <option value="">中国大陆</option>
+                                <option value="">中国大陆</option>
+                                <option value="">中国大陆</option>
+                                <option value="">中国大陆</option>
+                            </select>
+                        </td>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>详细地址<i>*</i></td>
+                        <td><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>邮政编码</td>
+                        <td><input type="text" value="如果不清楚邮递区号，请填写000000" onFocus="this.value=''"/></td>
+                    </tr>
+                    <tr>
+                        <td>收货人姓名<i>*</i></td>
+                        <td><input type="text" value="长度不超过25个字符" onFocus="this.value=''"/></td>
+                    </tr>
+                    <tr>
+                        <td>手机号码</td>
+                        <td>
+                            <select>
+                                <option value="">中国大陆 +86</option>
+                                <option value="">中国大陆 +86</option>
+                                <option value="">中国大陆 +86</option>
+                                <option value="">中国大陆 +86</option>
+                            </select>
+                        </td>
+                        <td><input type="text" value="电话号码，手机号码必须填一项" onFocus="this.value=''" style="  height: 20px;margin-left: 6px;"/></td>
+                    </tr>
+                    <tr>
+                        <td>电话号码</td>
+                        <td>
+                            <select>
+                                <option value="">中国大陆 +86</option>
+                                <option value="">中国大陆 +86</option>
+                                <option value="">中国大陆 +86</option>
+                                <option value="">中国大陆 +86</option>
+                            </select>
+                        </td>
+                        <td class="phone_num" style="width: 200px;"><input type="text"/>-<input type="text"/>-<input type="text"/></td>
+                    </tr>
+                    <tr>
+                        <td style="  margin-left: 25px;"><input class="tm-mcElect" data-tmc="elect" type="checkbox" style="width: 15px;
+  margin-left: 45px;"> </td>
+
+                        <td style="  margin-left: -9px;
+  margin-top: 3px;">设置为默认地址</td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="xin"> 确定新增</a></td>
+                    </tr>
+
+                </table>
+
+            </div>
+            <div class="clear"></div>
+            <div class="add">
+                <div class="add_tit">
+                    <img src="image/address.png" />
+                    <p>常用地址</p>
+                </div>
+            </div>
+            <div id="common-add" class="common-add">
+                <table>
+                    <tr>
+                        <td style="width: 70px;">收货人</td>
+                        <td style="padding-left: 13px;">所在地区</td>
+                        <td style="padding-left: 50px;">详细地址</td>
+                        <td style="padding-left: 90px;">邮编</td>
+                        <td style="padding-left: 25px;">电话/手机</td>
+                        <td>操作</td>
+
+
+                    </tr>
+                         <tr class="ri">
+                        <td id="td-shouhuoren">某某某</td>
+                        <td id="td-diqu">苏州园1区</td>
+                        <td id="td-xiangxidizhi" style="text-align: left">星湖街328号创意产业园2栋A座</td>
+                        <td id="td-youbian">215001</td>
+                        <td id="td-dianhua">180****0447</td>
+                        <td id="xiugai-1"><span class="button_xiugai">修改</span><span class="spacer"></span><span>删除</span></td>
+                        <td><a href="#" class="moren">设为默认</a></td>
+
+
+                    </tr>
+                        <div class="xxx"></div>
+                       <tr class="ri">
+                        <td id="td-shouhuoren">某某某</td>
+                        <td id="td-diqu">苏州园2区</td>
+                        <td id="td-xiangxidizhi" style="text-align: left">星湖街328号创意产业园2栋A座</td>
+                        <td id="td-youbian">215000</td>
+                        <td id="td-dianhua">180****0447</td>
+                        <td id="xiugai-2"><span  class="button_xiugai">修改</span><span class="spacer"></span><span>删除</span></td>
+                        <td><a href="#" class="moren">设为默认</a></td>
+
+
+                    </tr>
+                    <div class="xxx_1"></div>
+                    <tr class="ri">
+                        <td id="td-shouhuoren">某某某</td>
+                        <td id="td-diqu">苏州园3区</td>
+                        <td id="td-xiangxidizhi" style="text-align: left">星湖街328号创意产业园2栋A座</td>
+                        <td id="td-youbian">215000</td>
+                        <td id="td-dianhua">180****0447</td>
+                        <td id="xiugai-3"><span class="button_xiugai">修改</span><span class="spacer"></span><span>删除</span></td>
+                        <td><a href="#" class="moren">设为默认</a></td>
+
+
+                    </tr>
+                </table>
+            </div>
+
+        </div><!--order_right-->
+    </div><!--order--->
+</div>
+<div class="pinzhi">
+    <div class="pinzhi_b">
+        <ul>
+            <li class="pinzhi_b_li" style="border-left: 1px solid #eee;  padding-left: 9px;">
+                <img src="image/copright.png" />
+                <ul>
+                    <li><a href="#">品质保证</a></li>
+                    <li>品质护航 购物无忧</li>
+                </ul>
+
+            </li>
+            <li class="pinzhi_b_li">
+                <img src="image/copright1.png" />
+                <ul>
+                    <li><a href="#">支持天内发货</a></li>
+                    <li>为你提供售后无忧保障</li>
+                </ul>
+            </li>
+            <li class="pinzhi_b_li">
+                <img src="image/copright2.png" />
+                <ul>
+                    <li><a href="#">特色服务体验</a></li>
+                    <li>为您呈现不一样的服务</li>
+                </ul>
+            </li>
+            <li class="pinzhi_b_li">
+                <img src="image/copright3.png" />
+                <ul>
+                    <li><a href="#">帮助中心</a></li>
+                    <li>您的购物指南</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<div class="copyright">
+    <div class="copyright_content">
+        <ul>
+            <li>购物指南
+                <ul>
+                    <li><a href="#">新手帮助</a></li>
+                    <li><a href="#">购买流程</a></li>
+                    <li><a href="#">会员介绍</a></li>
+                    <li><a href="#">常见问题</a></li>
+                </ul>
+            </li>
+            <li>常见问题
+                <ul>
+
+                    <li><a href="#">订单状态</a></li>
+                    <li><a href="#">发票说明</a></li>
+
+                </ul>
+            </li>
+            <li>配送方式
+                <ul>
+                    <li><a href="#">配送范围</a></li>
+                    <li><a href="#">运费说明</a></li>
+                    <li><a href="#">上门自提</a></li>
+
+                </ul>
+            </li>
+            <li>支付方式
+                <ul>
+                    <li><a href="#">货到付款</a></li>
+                    <li><a href="#">在线支付</a></li>
+                    <li><a href="#">公司转账</a></li>
+
+                </ul>
+            </li>
+            <li>售后服务
+                <ul>
+                    <li><a href="#">售后政策</a></li>
+                    <li><a href="#">退款说明</a></li>
+                    <li style="padding-left:8px;"><a href="#">返修/退换货</a></li>
+                    <li><a href="#">门店预约</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><img src="image/weixin.png" alt="" width="182" height="102"style="padding-top: 25px;" /></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--copyright_content结束-->
+</div>
+<div class="ftt">
+    无锡市公安局朝阳分局备案编号110105014669&nbsp;&nbsp;|&nbsp;&nbsp;锡ICP证070359号&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a>互联网汽车信息服务资格证编号(京)-经营性-2014-0008</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;新出发京零&nbsp;字第大120007号
+    <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>汽车零配件许可证苏宿批005号</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;出版物经营许可证编号新出发(苏)批字第N-012号&nbsp;&nbsp;|&nbsp;&nbsp;互联网出版许可证编号新出网证(京)字150号
+    <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a>网络文化经营许可证京网文[2014]2148-348号</a>
+    &nbsp;&nbsp;违法和不良信息举报电话：4006561155&nbsp;&nbsp;Copyright&nbsp;©&nbsp;2004-2015&nbsp;&nbsp;三沐林&nbsp;版权所有
+    <br/>
+</div>
+<div class="authentication">
+    <a href="#"><img src="image/jingying.png" alt=""/></a>
+    <a href="#"><img src="image/kexin.png" alt=""/></a>
+    <a href="#"><img src="image/chengxin.png" alt=""/></a>
+    <a href="#"><img src="image/baokong.png" style="width:185px; "></a>
+</div>
+<div class="top_top"><a href="#">TOP</a></div><div class="top_top"><a href="#">TOP</a></div>
+    <div class="wei_xin" style="display: none">
+        <img src="image/weixin1.png" >
+    </div>
+</body>
+</html>

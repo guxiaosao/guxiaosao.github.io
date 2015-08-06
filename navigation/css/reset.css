@@ -2,7 +2,7 @@
 html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,pre,form,fieldset,button,input,textarea,th,td{margin:0;padding:0}
 body{background-color:#FFF;
     overflow-x: hidden;}
-body,button,input,select,textarea,fieldset,label{font:12px/1.5 "Lucida Grande",tahoma,arial,\5b8b\4f53;color:#666}
+body,button,input,select,textarea,fieldset,label{font-size: 13px;font-family: "Microsoft YaHei";}
 h1,h2,h3,h4,h5,h6{font-size:100%}
 ul,ol{list-style:none}
 fieldset,img{border:0 none}
@@ -16,5 +16,4 @@ textarea{overflow-y:auto;resize:vertical}
 .clear,.clearfix{zoom:1}
 .clear:after,.clearfix:after{content:' ';display:block;clear:both;height:0;visibility:hidden}
 .hidden,.hide{display:none}
-a{color:#333;text-decoration:none}
-a:hover{color:blue}
+a{color:white;text-decoration:none}
