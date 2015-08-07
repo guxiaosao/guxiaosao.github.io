@@ -1,0 +1,32 @@
+*{padding: 0;margin: 0 auto;}
+a{text-decoration: none;}
+body{font-size: 14px;font-family: 'Microsoft Yahei' ;background: black url("../image/background.jpg") 50% top scroll no-repeat;}
+#nav{
+    line-height: 40px;
+    height: 40px;
+    margin: 0 auto 10px;
+
+    position: fixed;left: 100px;
+    top: 200px;}
+#nav ul {
+    list-style: none;
+    margin: auto;
+
+}
+#nav ul li {
+
+    padding: 15px 0;
+    text-align: left;
+    text-shadow: #333 1px 1px 1px;
+
+}
+#nav ul li a {
+    font-family: arial;font-size: 18px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+}
+#nav ul li a:hover{background: #808080;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 50px 0;}
