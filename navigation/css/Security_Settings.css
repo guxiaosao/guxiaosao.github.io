@@ -1,0 +1,50 @@
+.safe{background-color: #eee;height: 45px;line-height: 45px;}
+.safe img{float: left;padding-top: 5px;padding-left: 10px;}
+.safe p{padding-left: 10px;float: left;font-size: 14px; }
+.safa_ser table tr td img{display: block}
+.safa_ser table tr td{text-align: left}
+.safa_ser table tr td a{color: #385EC3;font-weight: 700}
+.secur{padding-bottom: 188px;}
+.safa_ser table{height: 100px;}
+.safa_tit{  margin-top: 60px;
+    margin-left: 49px; }
+.safa_ser{margin-top: 80px;padding-bottom: 218px;
+    margin-right: 160px;}
+.mima{float: left;margin-top: 70px;padding-bottom: 244px;
+    margin-left: 51px;}
+.mima table td{padding: 10px 4px;width: 126px;text-align: right;line-height: 35px;}
+.mima table td:first-child{line-height: 45px;}
+.mima table td input{height: 35px;width: 240px}
+.queding a{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+   background: #10a8c2;
+    }
+.yanzheng a,.queding a{display: block; text-align: center;
+    font-size: 14px;
+    font-family: '\5fae\8f6f\96c5\9ed1';overflow: hidden;
+    position: relative;}
+.yanzheng{border: 1px solid #D0CCCC;margin-left: 18px;width: 130px;}
+.yanzheng a{
+   width: 130px;
+    height: 25px;
+    line-height: 25px;
+    color: #808080;
+   background: #eee;
+   }
+.queding{margin-left:250px;margin-top: 24px;}
+.shouji {float: left;margin-left: 71px;
+    margin-top: 40px;padding-bottom: 254px;}
+.shouji table tr td{font-size: 14px;
+    float: left;
+    padding: 2px 3px;}
+.shouji table tr td:first-child{text-align: right;width: 100px;height: 30px;line-height: 30px;}
+.shouji table tr td input{height: 30px;width: 180px;}
+.shouji table tr td span{padding-right: 5px;}
+.xiaua_xian{  border-bottom: 1px dashed #eee;
+    width: 90%;
+    position: relative;
+    top: -26px;
+}

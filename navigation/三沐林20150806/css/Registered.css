@@ -1,0 +1,71 @@
+
+.zhuce{display: block;
+    width: 123px;
+    height: 50px;
+    background: #333333;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 33px;}
+#div1{
+    position:absolute;
+    top:10%;
+    bottom:10%;
+    right:20%;
+    left:20%;
+}
+.div2{
+    width:201px;
+    height:100px;
+    background:url(../image/logo.png) no-repeat center;
+}
+.div3{
+    position:absolute;
+    left:230px;
+    font-size:24px;
+    top:30px;
+    padding-left:30px;
+    height:40px;
+    line-height:40px;
+    border-left:2px solid #999999;
+}
+.div4{
+    position:absolute;
+    top:110px;
+    width:50%;
+    height:300px;
+
+}
+.div4 p{
+    position:relative;
+    height:60px;line-height:60px;
+    border:1px solid #999999;
+}
+p input{
+    position:absolute;
+    left:42px;
+    bottom:10px;top:10px;right:0px;
+    border:0px;
+    border-left:1px solid #999999;
+    font-size:24px;
+    outline:none;
+    padding-left:10px;
+}
+#div5{
+    position:absolute;
+    top:110px;
+    right:0px;
+    border-left:#999999 1px solid;
+    width:45%;
+    height:300px;
+}
+#div6{
+    position:absolute;
+    top:0px;
+    left:30px;
+    bottom:0px;
+    right:0px;
+}
+.login_t{background:url(../image/tou.png) no-repeat left;}
+.login_b{background:url(../image/mima.png) no-repeat left;}

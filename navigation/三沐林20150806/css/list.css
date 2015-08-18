@@ -1,0 +1,125 @@
+
+.container,.ad_wrap,.as_warp,.zhonghe,.liebiao,.w{width: 1200px;}
+.selector{border-top: 1px solid #DDD;
+    background: #FFF;
+    margin-bottom: 10px;}
+.s_title{border-bottom: 1px solid #DDD;
+    background: #f1f1f1;
+    line-height: 34px;
+    height: 34px;
+    overflow: hidden;
+    zoom: 1;}
+.s_title h3{float: left;
+    padding-left: 10px;color: black}
+.s_title h3 b{  color: #10a8c2;font-size: 16px;
+    margin-right: 5px;}
+.s_title h3 em{font-style: normal;font-size: 14px;}
+.s_text{  float: left;
+    padding-left: 20px;  color: #808080;
+    font-size: 14px;}
+.ad_wrap{position: relative;
+    _zoom: 1;
+    line-height: 34px;
+    border: 1px solid #DDD;overflow: hidden}
+.ad_key,.sy_key{float: left;width: 100px;background-color: #eee;padding-left: 10px;}
+.ad_value{margin-left: 110px;
+    padding-right: 130px;
+    padding-left: 10px;
+    overflow: hidden;
+    zoom: 1; margin-top: 5px;}
+.ad_value ul li a img{margin: 5px 6px; vertical-align: top}
+.ad_value ul{height: 99px;padding-top: 2px;}
+.ad_value ul li {float: left;
+    _display: inline;
+    width: 105px;
+    height: 48px;
+    padding: 0;
+    border: 1px solid #DDD;
+    margin-right: 0;
+    margin: -1px -1px 0 0;
+    background: #FFF;
+    text-align: center;}
+.ad_btns{position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 120px;
+    height: auto;
+    line-height: 22px;
+    overflow: hidden;
+    zoom: 1;}
+.gengduo{float: left;
+    height: 20px;
+    line-height: 20px;
+
+    padding: 0 3px 0 18px;
+    position: relative;
+    background: #fff;
+    color: #333;}
+.duoxuan{float: left;
+    height: 20px;
+    line-height: 20px;
+
+    padding: 0 3px 0 18px;
+    position: relative;
+    background: #fff;
+    color: #333}
+.as_value {float: left;margin-left: 13px;}
+.as_value ul li{float: left;margin-right: 50px;}
+.as_warp{overflow: hidden;height: 40px;line-height: 40px;border: 1px solid #DDD}
+.ad_key p,.ad_key span,.as_value ul li a ,.sy_key span{color: #808080;font-size: 13px;}
+.as_value ul li a:hover{color: #10a8c2}
+.as_warp select{font-size: 16px;margin-right: 100px;color: #808080}
+.as_value p{color: #10a8c2;font-size: 16px;}
+.zhonghe{background-color: #EEEEEE;height:40px;line-height: 40px;margin-top: 30px;}
+.zhonghe ul li{float: left;width: 60px;padding-left: 10px;}
+.zhonghe ul li a{font-size: 14px;color: #808080}
+
+.liebiao{margin-top: 10px;}
+.liebiao ul li{width: 237px;
+    float: left;
+    border: 1px solid #eee;cursor: pointer;
+    }
+.p_img{text-align: center}
+.p_text{width: 90%;border-bottom: 1px dashed #eee;font-size: 16px;}
+.busy{font-size: 18px;font-weight: bold;padding-left: 14px;padding-top: 12px;}
+.p_price,.p_gomai{float: left}
+.p_sbusy{
+    padding: 5px 12px;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+.p_text:hover{color: #10a8c2}
+.p_gomai{padding-top: 15px;
+    padding-left: 45px;}
+.p_gomai a{display: block;padding: 6px; background-color: #10a8c2;color: white}
+.liebiao ul li:hover{border-color: #10a8c2;}
+.hot{  font-family: cursive;padding-top: 10px;
+    font-size: 28px;
+    padding-left: 20px;color: white}
+.p_dongli {background-color: #10a8c2}
+.hot_ya{color: white;font-size: 14px;padding-left: 20px;}
+.p_dongli a{position: absolute;right: 20px;color: white;bottom: 10px;}
+.p_dongli{height: 98px;position: relative}
+.w{margin-top: 10px;}
+.crumbs-bar{position:relative;margin-bottom:10px;z-index:5}
+.crumbs-nav{line-height:47px;overflow: hidden;float: left;}
+.clearfix{display:block;}
+.crumbs-nav-item{float:left;margin-right:8px}
+.crumbs-nav-item  a{  color: black;}
+.menu-drop{display:inline-block;height:24px;cursor:pointer}
+.menu-drop .trigger{display:inline-block;height:22px;padding:0 4px 0 8px;border:1px solid #ddd; line-height:22px;position: relative;z-index: 10;}
+.menu-drop .trigger .curr{display:inline-block;}
+.menu-drop .menu-drop-arrow{display:inline-block;width:20px;height:20px;vertical-align:top;background:url(http://misc.360buyimg.com/product/list/1.0.3/css/i/search.ele.png) no-repeat 4px 7px;-webkit-transition:background-position .15s ease-in-out;-moz-transition:background-position .15s ease-in-out;transition:background-position .15s ease-in-out}
+.menu-drop-list li{float:left;width:65px;height:24px;overflow:hidden;line-height:24px;margin-right:5px;text-overflow:ellipsis;white-space:nowrap}
+.a{color:#666;text-decoration:none}
+.crumbs-arrow{font-style:normal;color: gray;
+    padding-left: 5px;}
+.menu-drop-main,.menu-drop-maan{display:none;width:350px;padding:10px 0 10px 8px;position:absolute;  left:90px;top:34px;border:1px solid #10a8c2;background-color:#fff}
+.menu-drop-list li{float:left;width:65px;height:24px;overflow:hidden;line-height:24px;margin-right:5px;text-overflow:ellipsis;white-space:nowrap}
+.menu-drop .trigger:hover{border-color: #10a8c2;border-bottom-color: white !important; }
+.menu-drop-list li a:hover{color: red;}
+.zhonghe ul li img{position: relative;top: 6px;left: 3px;}
+.ad_btns ul li{float: left;height: 26px;line-height: 26px;}
+.ad_btns ul li a{font-size: 12px;height: 26px;line-height: 26px;}
+.ad_btns ul li img{height: 10px;}
+.container{position: relative;}

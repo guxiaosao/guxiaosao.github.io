@@ -1,0 +1,36 @@
+.success{  overflow: hidden;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 10px;}
+.success img{float: left;padding: 30px;}
+.success ul li:first-child{font-size: 16px;font-weight: 700;padding-left: 6px;
+    display: inline-block;
+    padding-bottom: 5px;}
+.success ul li:first-child span{color: #10a8c2;
+    font-size: 18px;
+    display: inline-block;
+    padding-left: 10px;}
+.success ul{padding-top: 35px;}
+.Payment_m table tr td a img{width: 100%;height: 100%}
+.Payment_m table tr td{width: 148px;padding:10px 0;float: none}
+.Payment_m table {float: left}
+.Payment_m table a{display: block;width: 120px;height: 47px;border: 1px solid #eee;line-height: 47px;font-size: 16px;color: black}
+.Payment_m h3{padding: 16px 15px;
+    font-size: 16px;}
+.Payment_m table tr td a:hover{border: 1px solid #10a8c2}
+.Payment_m .qrfk{  display: block;
+    width: 110px;
+    height: 50px;
+    background: #10a8c2;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 80px;
+    color: white;}
+.Payment_m{padding-bottom: 100px;}
+.zzz{border: 1px solid #10a8c2}
+.q span{color: #10a8c2}
+
+.success ul li span{color: #10a8c2;cursor: pointer}
+.liebiao h3{padding: 10px 0;font-size: 16px;}
+.success ul li{letter-spacing: 3px;}
+.Payment_m table .aa{border: 1px solid #10a8c2}
